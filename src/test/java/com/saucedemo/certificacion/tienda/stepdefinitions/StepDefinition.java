@@ -5,8 +5,14 @@ import com.saucedemo.certificacion.tienda.tasks.CartPage;
 import com.saucedemo.certificacion.tienda.tasks.RemoveFromCart;
 import com.saucedemo.certificacion.tienda.tasks.LoginTask;
 import com.saucedemo.certificacion.tienda.tasks.AddProductTask;
-import com.saucedemo.certificacion.tienda.userinterfaces.ProductsPage;
+import com.saucedemo.certificacion.tienda.tasks.ProductsPage;
 import com.saucedemo.certificacion.tienda.userinterfaces.LoginPage;
+import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.targets.Target;
+import com.saucedemo.certificacion.tienda.userinterfaces.CheckoutPage;
+import net.serenitybdd.screenplay.actions.Enter;
+
+
 
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
@@ -46,7 +52,7 @@ public class StepDefinition {
 
 
         theActorInTheSpotlight().attemptsTo(
-                AddProductTask.withName(product)
+                RemoveFromCart.theProduct(product)
         );
     }
 
@@ -78,7 +84,36 @@ public class StepDefinition {
         );
     }
 
+    @When("I go to the cart")
+    public void iGoToTheCart() {
+        theActorInTheSpotlight().attemptsTo(
+                Click.on(ProductsPage.CART_ICON)
+        );
+    }
 
+    @When("I proceed to checkout")
+    public void iProceedToCheckout() {
+        theActorInTheSpotlight().attemptsTo(
+                Click.on(CartPage.CHECKOUT_BUTTON)
+        );
+    }
+
+    @When("I fill in checkout information with first name {string}, last name {string}, and postal code {string}")
+    public void iFillCheckoutInformation(String firstName, String lastName, String postalCode) {
+        theActorInTheSpotlight().attemptsTo(
+                Enter.theValue(firstName).into(CheckoutPage.FIRST_NAME),
+                Enter.theValue(lastName).into(CheckoutPage.LAST_NAME),
+                Enter.theValue(postalCode).into(CheckoutPage.POSTAL_CODE),
+                Click.on(CheckoutPage.CONTINUE_BUTTON)
+        );
+    }
+
+    @When("I finish the purchase")
+    public void iFinishThePurchase() {
+        theActorInTheSpotlight().attemptsTo(
+                Click.on(CheckoutPage.FINISH_BUTTON)
+        );
+    }
 
     @Then("I can see the products page")
     public void iCanSeeTheProductsPage() {
@@ -109,14 +144,21 @@ public class StepDefinition {
     @Then("I should not see the product {string} in the cart")
     public void iShouldNotSeeTheProductInTheCart(String product) {
         theActorInTheSpotlight().should(
-
                 seeThat("Product removed",
                         actor -> CartPage.REMOVE_BUTTON(product)
-                                .of(product)
                                 .resolveAllFor(actor)
-                                .isEmpty()
-                        , is(true)
+                                .isEmpty(),
+
+                        is(true)
                 )
+        );
+    }
+    @Then("I should see the confirmation message")
+    public void iShouldSeeTheConfirmationMessage() {
+        theActorInTheSpotlight().should(
+                seeThat("Confirmation message is visible",
+                        actor -> CheckoutPage.CONFIRMATION_MESSAGE.resolveFor(actor).isVisible(),
+                        is(true))
         );
     }
 }

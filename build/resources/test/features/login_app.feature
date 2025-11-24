@@ -1,3 +1,4 @@
+#author : steven Alipio - john sebastian usuga
 #language: en
 Feature: Access to the SauceDemo store
   As a client
@@ -24,9 +25,19 @@ Feature: Access to the SauceDemo store
     When I add the product "Sauce Labs Backpack" to the cart
     Then I can see the product in the cart
 
-    #quitar productos
+
   #quitar productos
   Scenario: Remove a product from the cart
     Given I am logged into SauceDemo with the product "Sauce Labs Backpack" in the cart
     When I remove the product "Sauce Labs Backpack" from the cart
     Then I should not see the product "Sauce Labs Backpack" in the cart
+
+ #fujo completo
+  Scenario: Complete a purchase successfully
+    Given I am logged into SauceDemo
+    When I add the product "Sauce Labs Backpack" to the cart
+    And I go to the cart
+    And I proceed to checkout
+    And I fill in checkout information with first name "John", last name "Doe", and postal code "12345"
+    And I finish the purchase
+    Then I should see the confirmation message

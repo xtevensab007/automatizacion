@@ -1,171 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Access to the SauceDemo store" tests="4" skipped="0" failures="1" errors="0" timestamp="2025-11-24T09:26:15.683Z" hostname="STEVEN" time="40.822">
+<testsuite name="Access to the SauceDemo store" tests="5" skipped="0" failures="1" errors="0" timestamp="2025-11-24T20:55:15.002Z" hostname="DESKTOP-K64VVJ6" time="72.102">
   <properties/>
-  <testcase name="Login successfully into SauceDemo" classname="Access to the SauceDemo store" time="10.915"/>
-  <testcase name="Login failed with invalid credentials" classname="Access to the SauceDemo store" time="8.404"/>
-  <testcase name="Add a product to the cart" classname="Access to the SauceDemo store" time="10.503"/>
-  <testcase name="Remove a product from the cart" classname="Access to the SauceDemo store" time="11.0">
-    <failure message="net.thucydides.core.webdriver.exceptions.ElementShouldBePresentException: Expected condition failed: waiting for By.xpath: //div[@class='inventory_item'][.//div[text()='Sauce Labs Backpack']]//button[contains(text(),'Add to cart')] to be present (tried for 5 second(s) with 100 milliseconds interval)&#10;Build info: version: '4.16.1', revision: '9b4c83354e'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'&#10;Driver info: driver.version: unknown" type="net.thucydides.core.webdriver.exceptions.ElementShouldBePresentException">net.thucydides.core.webdriver.exceptions.ElementShouldBePresentException: Expected condition failed: waiting for By.xpath: //div[@class='inventory_item'][.//div[text()='Sauce Labs Backpack']]//button[contains(text(),'Add to cart')] to be present (tried for 5 second(s) with 100 milliseconds interval)
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: driver.version: unknown
-	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.throwShouldBePresentErrorWithCauseIfPresent(WebElementFacadeImpl.java:1039)
-	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilPresent(WebElementFacadeImpl.java:1012)
-	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementPresent(WebElementFacadeImpl.java:915)
-	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1214)
-	at app//net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
-	at app//net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$wfcvlpYx.performAs$accessor$K6usdKjq(Unknown Source)
-	at java.base@17.0.12/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.12/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.12/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.12/java.lang.reflect.Method.invoke(Method.java:568)
-	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:524)
-	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:504)
-	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:476)
-	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:218)
-	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:205)
-	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
-	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at app//net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$wfcvlpYx.performAs(Unknown Source)
-	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
-	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
-	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
-	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
-	at app//net.serenitybdd.screenplay.AnonymousPerformable.performAs(AnonymousPerformable.java:25)
-	at app//net.serenitybdd.screenplay.AnonymousTask$ByteBuddy$WSiVZRdG.performAs$accessor$P8rBWodA(Unknown Source)
-	at java.base@17.0.12/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.12/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.12/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.12/java.lang.reflect.Method.invoke(Method.java:568)
-	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:524)
-	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:504)
-	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:476)
-	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:218)
-	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:205)
-	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
-	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at app//net.serenitybdd.screenplay.AnonymousTask$ByteBuddy$WSiVZRdG.performAs(Unknown Source)
-	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
-	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
-	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
-	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
-	at app//com.saucedemo.certificacion.tienda.stepdefinitions.StepDefinition.iAmLoggedIntoSauceDemoWithProductInCart(StepDefinition.java:48)
-	at ✽.I am logged into SauceDemo with the product &quot;Sauce Labs Backpack&quot; in the cart(file:///C:/Users/steve/Documents/calidad/Automatizacion/src/test/resources/features/login_app.feature:30)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.xpath: //div[@class='inventory_item'][.//div[text()='Sauce Labs Backpack']]//button[contains(text(),'Add to cart')] to be present (tried for 5 second(s) with 100 milliseconds interval)
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: driver.version: unknown
-	at app//org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:261)
-	at app//org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilPresent(WebElementFacadeImpl.java:1009)
-	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementPresent(WebElementFacadeImpl.java:915)
-	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1214)
-	at app//net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
-	at app//net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$wfcvlpYx.performAs$accessor$K6usdKjq(Unknown Source)
-	at java.base@17.0.12/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.12/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.12/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.12/java.lang.reflect.Method.invoke(Method.java:568)
-	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:524)
-	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:504)
-	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:476)
-	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:218)
-	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:205)
-	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
-	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at app//net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$wfcvlpYx.performAs(Unknown Source)
-	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
-	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
-	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
-	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
-	at app//net.serenitybdd.screenplay.AnonymousPerformable.performAs(AnonymousPerformable.java:25)
-	at app//net.serenitybdd.screenplay.AnonymousTask$ByteBuddy$WSiVZRdG.performAs$accessor$P8rBWodA(Unknown Source)
-	at java.base@17.0.12/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.12/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.12/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.12/java.lang.reflect.Method.invoke(Method.java:568)
-	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:524)
-	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:504)
-	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:476)
-	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:218)
-	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:205)
-	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
-	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at app//net.serenitybdd.screenplay.AnonymousTask$ByteBuddy$WSiVZRdG.performAs(Unknown Source)
-	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
-	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
-	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
-	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
-	at app//com.saucedemo.certificacion.tienda.stepdefinitions.StepDefinition.iAmLoggedIntoSauceDemoWithProductInCart(StepDefinition.java:48)
-	at java.base@17.0.12/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.12/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.12/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.12/java.lang.reflect.Method.invoke(Method.java:568)
-	at app//io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at app//io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at app//io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at app//io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at app//io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at app//io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at app//io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at app//io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
-	at app//io.cucumber.core.runner.TestStep.run(TestStep.java:56)
-	at app//io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at app//io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at app//io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at app//io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
-	at app//io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at app//io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at app//io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at app//io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
-	at app//io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
-	at app//io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
-	at app//org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at app//org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at app//org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at app//org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at app//io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
-	at app//io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:332)
-	at app//io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:53)
-	at app//org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at app//org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at app//io.cucumber.junit.CucumberSerenityBaseRunner$RunCucumber.evaluate(CucumberSerenityBaseRunner.java:363)
-	at app//org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at app//org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at app//org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at app//org.junit.runner.JUnitCore.run(JUnitCore.java:115)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runRequest(JUnitTestClassExecutor.java:176)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:84)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:45)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:61)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:54)
-	at java.base@17.0.12/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.12/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.12/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.12/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.gradle.internal.dispatch.MethodInvocation.invokeOn(MethodInvocation.java:77)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:28)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:19)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:88)
-	at jdk.proxy1/jdk.proxy1.$Proxy4.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:177)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:126)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+  <testcase name="Login successfully into SauceDemo" classname="Access to the SauceDemo store" time="13.201"/>
+  <testcase name="Login failed with invalid credentials" classname="Access to the SauceDemo store" time="9.025"/>
+  <testcase name="Add a product to the cart" classname="Access to the SauceDemo store" time="11.564"/>
+  <testcase name="Remove a product from the cart" classname="Access to the SauceDemo store" time="14.132">
+    <failure message="java.lang.AssertionError: &#10;Expected: an element that is clickable&#10;     but: no matching element found by [remove button in cart for product Sauce Labs Backpack located with: //*[@id='remove-sauce-labs-backpack']] was not clicked" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: an element that is clickable
+     but: no matching element found by [remove button in cart for product Sauce Labs Backpack located with: //*[@id='remove-sauce-labs-backpack']] was not clicked
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
+	at net.serenitybdd.screenplay.QuestionConsequence.evaluateFor(QuestionConsequence.java:49)
+	at net.serenitybdd.screenplay.EventualConsequence.evaluateFor(EventualConsequence.java:59)
+	at net.serenitybdd.screenplay.Actor.check(Actor.java:420)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:392)
+	at net.serenitybdd.screenplay.waits.WaitUntilBuilder$1.performAs(WaitUntilBuilder.java:29)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at net.serenitybdd.screenplay.Actor.performSilently(Actor.java:254)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:211)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at com.saucedemo.certificacion.tienda.tasks.RemoveFromCart.performAs(RemoveFromCart.java:26)
+	at com.saucedemo.certificacion.tienda.tasks.RemoveFromCart$ByteBuddy$1tu6pUqS.performAs$accessor$wPBNPSTx(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:524)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:504)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:476)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:218)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:205)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at com.saucedemo.certificacion.tienda.tasks.RemoveFromCart$ByteBuddy$1tu6pUqS.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at com.saucedemo.certificacion.tienda.stepdefinitions.StepDefinition.iRemoveTheProductFromTheCart(StepDefinition.java:82)
+	at ✽.I remove the product &quot;Sauce Labs Backpack&quot; from the cart(file:///C:/Users/Administrador/IdeaProjects/automatizacion/src/test/resources/features/login_app.feature:32)
 </failure>
   </testcase>
+  <testcase name="Complete a purchase successfully" classname="Access to the SauceDemo store" time="24.179"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[[Test worker] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
@@ -176,10 +53,10 @@ Driver info: driver.version: unknown
 Login successfully into SauceDemo(access-to-the-saucedemo-store;login-successfully-into-saucedemo)
 --------------------------------------------------------------------------------
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
-[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors, \n                   --disa..., --disable-default-apps, --disable-extensions-file-a..., \n                   --inco..., --disable-infobars,--disabl..., --remote-allow-origins=*], extensions: []}}
-nov. 24, 2025 4:26:17 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors, \r\n                   --di..., --disable-default-apps, --disable-extensions-file-a..., \r\n                   --in..., --disable-infobars,--disabl..., --remote-allow-origins=*], extensions: []}}
+nov. 24, 2025 3:55:17 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 142
-nov. 24, 2025 4:26:17 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+nov. 24, 2025 3:55:17 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 142.0.7444.176. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [Test worker] INFO  - ?[92m
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -237,7 +114,23 @@ Remove a product from the cart(access-to-the-saucedemo-store;remove-a-product-fr
 
 Remove a product from the cart
 -----------------------------------------------------------------------?[0m
-[Test worker] ERROR  - ?[91m    Test failed at step: User clicks on add to cart button?[0m
-[Test worker] ERROR  - ?[91m    Expected condition failed: waiting for By.xpath: //div[@class='inventory_item'][.//div[text()='Sauce Labs Backpack']]//button[contains(text(),'Add to cart')] to be present (tried for 5 second(s) with 100 milliseconds interval)Build info: version: '4.16.1', revision: '9b4c83354e'System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'Driver info: driver.version: unknown?[0m
+[Test worker] ERROR  - ?[91m    Test failed at step: User remove from cart?[0m
+[Test worker] ERROR  - ?[91m    Expected: an element that is clickable but: no matching element found by [remove button in cart for product Sauce Labs Backpack located with: //*[@id='remove-sauce-labs-backpack']] was not clicked?[0m
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Complete a purchase successfully(access-to-the-saucedemo-store;complete-a-purchase-successfully)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - ?[92m
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Complete a purchase successfully
+----------------------------------------------------------------------?[0m
 ]]></system-err>
 </testsuite>
